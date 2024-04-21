@@ -1,23 +1,80 @@
-//in here i'm basically trying to change the mouse cursor to a pointer whenever users hover over certain items with the relevenat id
+//in here im  initialising the various variables by attaching the elements  ids in my html doccie so that they'll be accessed directly
+const profileLink = document.getElementById("link_profile");
+const blogsLink = document.getElementById("link_blogs");
+const designLink = document.getElementById("link_designs");
+const essaysLink = document.getElementById("link_essays");
+const PortfolioLInk = document.getElementById("link_portfolio");
+const commentaryLink = document.getElementById("link_commentary");
+const softwareLink = document.getElementById("link_software")
 
-const link = document.getElementById('link'); //so its first collects the id from the html doccie
+//adding event listeners to the links(const variables) that are connected to the element ids from the html docie:)
+//there's probably a better way to do this but pls bear me w me 
+    profileLink.addEventListener("mouseover", event => {
+        profileLink.innerText = profileLink.innerText.toUpperCase();
+        
+    });
 
+    profileLink.addEventListener("mouseout", event => {
+       profileLink.innerText = profileLink.innerText.toLowerCase();
+    });
 
-function changeCursorToPointer(element) { //here im changing  the cursor to a pointer and making text uppercase for which the pointer is on 
-  element.style.cursor = "pointer";
-  element.style.textTransform = "uppercase"
-}
+    PortfolioLInk.addEventListener("mouseover", event => {
+        PortfolioLInk.innerText = PortfolioLInk.innerText.toUpperCase();
+       
+    });
 
-function changeCursorToDefault(element) { //taking the cursor to the way it was initially and changing the text back to initial lowercase
-  element.style.cursor = "default";
-  element.style.textTransform = "lowercase"
-}
+    PortfolioLInk.addEventListener("mouseout", event => {
+       PortfolioLInk.innerText = PortfolioLInk.innerText.toLowerCase();
+    });
 
-// Adding  event listeners for mouseover and mouseout below 
+    blogsLink.addEventListener("mouseover", event => {
+        blogsLink.innerText = blogsLink.innerText.toUpperCase();
+    });
 
-link.addEventListener('mouseover', function() {
-  changeCursorToPointer(this); //using "this" to refer to the local context in the function declared or that we executing in  (Mike Geyser, 2024) 
-});
-link.addEventListener('mouseout', function() {
-  changeCursorToDefault(this);
-})
+    blogsLink.addEventListener("mouseout", event => {
+       blogsLink.innerText = blogsLink.innerText.toLowerCase();
+    });
+
+    designLink.addEventListener("mouseover", event => {
+        designLink.innerText = designLink.innerText.toUpperCase();
+    });
+
+    designLink.addEventListener("mouseout", event => {
+       designLink.innerText = designLink.innerText.toLowerCase();
+    });
+
+    essaysLink.addEventListener("mouseover", event =>{
+       essaysLink.innerText = essaysLink.innerText.toUpperCase();
+    });
+
+    essaysLink.addEventListener("mouseout", event =>{
+     essaysLink.innerText = essaysLink.innerText.toLowerCase();
+    });
+
+    commentaryLink.addEventListener("mouseover", event => {
+        commentaryLink.innerText = commentaryLink.innerText.toUpperCase();
+       
+    });
+
+    commentaryLink.addEventListener("mouseout", event => {
+       commentaryLink.innerText = commentaryLink.innerText.toLowerCase();
+    });
+
+    softwareLink.addEventListener("mouseover", event => {
+        softwareLink.innerText = softwareLink.innerText.toUpperCase();
+       
+    });
+
+    softwareLink.addEventListener("mouseout", event => {
+       softwareLink.innerText = softwareLink.innerText.toLowerCase();
+    });
+
+    //checking if my code runs or not by returning these messages in the console
+    console.log(profileLink);
+    console.log(blogsLink);
+    console.log(designLink);
+    console.log(essaysLink);
+    console.log(softwareLink);
+    console.log(commentaryLink);
+    console.log(PortfolioLInk);
+
