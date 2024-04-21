@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <!--for Open Graph Protocol purposes to render this website content correclty on social media platforms that I may share it on-->
+<head> <!-- Meta tags for Open Graph Protocol purposes to render this website content correctly on social media platforms that I may share it on-->
     <meta charset="UTF-8">
    <meta property="og:locale" content="en_US">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +8,34 @@
    <meta property="og:type" content="Navigation">
    <meta property="article:author" content="Dumziii Mofolo">
    <meta property="og:title" content="Dumzii's Homepage"> 
-   <meta property ="og: keywords">
-<!--In here , I'm just applying some form of structured data so that search engines 
+   <meta property ="og: keywords" content=
+         "Dumziii,
+          Dumisani, 
+          Mofolo,
+          commentary, 
+          software, 
+          politics,
+          portfolio
+         ">
+<!--In here , I'm just applying some form of Structured Data so that search engines 
     like Google could potentially bring up this website when these key words are typed in the search bar-->
-   <script type="application/id+json">
+   <script type="application/id+json"> ==$0
     {
         "@context": "https://shema.org/" ,
         "@type": "Socio-cultural and political articles" ,
-        "name": "Dumziii's World, Dumisani Mofolo",
+        "headline": "Dumziii's World  Portfolio",
+        "author": [{
+        "@type": "Person",
+        "name": "Dumisani Mofolo",
         "description": "commentary on Social-cultural and political issues affecting South Africa" ,
-    }
 
-    "URL": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2444372/"
-    
-   </script>
-
+         "URL": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2444372/"}]
+    } 
+    </script>
+    <script type="module"> import { Initialize } from "/JavaScript Code/Menu.js" 
+        Initialize("Home") 
+    </script>
+    <script type="module">"../JavaScript Code/Hovering.js"</script>
 </head>
 <body>
 <h1> Dumziii's World</h1>
@@ -31,21 +44,22 @@
         <!--the header tag starts here as this section is related to the headings for each hyperlink text-->
                 <nav>
                     <ul>
+                        <!--Navigation links-->
                         <li><strong>Home</strong></li><br>
-                        <li><a href = "Profile.html">Profile</a></li><br>
-                        <li><a href = "BlogPage.html">Blogs</a></li><br>
-                        <li><a href="Design.html">Design</a></li><br>
-                        <li><a href="Essays.html">Essays</a></li><br>
-                        <li><a href = "Portfolio work.html">Portfolio</a></li><br>
-                        <li><a href ="Social and Political Commentary.html">Commentary</a></li><br>
-                        <li><a href="Behance and Art Station.html">Software</a></li><br>
+                        <li><a href = "Profile.html" id="link">Profile</a></li><br>
+                        <li><a href = "BlogPage.html" id="link">Blogs</a></li><br>
+                        <li><a href="Design.html" id="link">Design</a></li><br>
+                        <li><a href="Essays.html" id="link">Essays</a></li><br>
+                        <li><a href = "Portfolio work.html" id="link">Portfolio</a></li><br>
+                        <li><a href ="Social and Political Commentary.html" id="link">Commentary</a></li><br>
+                        <li><a href="Software Projects/Behance and Art Station.html" id="link">Software</a></li><br>
                     </ul>
                 </nav>
     </header> <!--the header tag ends here-->
 
 <hr>
 
-<main>
+<main> <!--Main Content -->
     <picture>
        <img src="Images/Welcome Image.png", alt="Introductory Greetings with Authors Nickname and last name." width="950px" height="700px">
 
