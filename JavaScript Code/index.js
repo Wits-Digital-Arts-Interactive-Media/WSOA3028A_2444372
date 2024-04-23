@@ -47,6 +47,7 @@ function main(){
     return true;
 }
 main();
+console.log(main);
  
 
 

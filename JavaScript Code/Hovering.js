@@ -3,14 +3,14 @@ const profileLink = document.getElementById("link_profile");
 const blogsLink = document.getElementById("link_blogs");
 const designLink = document.getElementById("link_designs");
 const essaysLink = document.getElementById("link_essays");
-const PortfolioLInk = document.getElementById("link_portfolio");
+const PortfolioLink = document.getElementById("link_portfolio");
 const commentaryLink = document.getElementById("link_commentary");
 const softwareLink = document.getElementById("link_software")
 
 //adding event listeners to the links(const variables) that are connected to the element ids from the html docie:)
 //there's probably a better way to do this but pls bear me w me 
     profileLink.addEventListener("mouseover", event => {
-        profileLink.innerText = profileLink.innerText.toUpperCase();
+        profileLink.innerText = profileLink.innerText.toUpperCase(); 
         
     });
 
@@ -18,13 +18,13 @@ const softwareLink = document.getElementById("link_software")
        profileLink.innerText = profileLink.innerText.toLowerCase();
     });
 
-    PortfolioLInk.addEventListener("mouseover", event => {
-        PortfolioLInk.innerText = PortfolioLInk.innerText.toUpperCase();
+    PortfolioLink.addEventListener("mouseover", event => {
+        PortfolioLink.innerText = PortfolioLink.innerText.toUpperCase();
        
     });
 
-    PortfolioLInk.addEventListener("mouseout", event => {
-       PortfolioLInk.innerText = PortfolioLInk.innerText.toLowerCase();
+    PortfolioLink.addEventListener("mouseout", event => {
+       PortfolioLink.innerText = PortfolioLink.innerText.toLowerCase();
     });
 
     blogsLink.addEventListener("mouseover", event => {
@@ -76,5 +76,5 @@ const softwareLink = document.getElementById("link_software")
     console.log(essaysLink);
     console.log(softwareLink);
     console.log(commentaryLink);
-    console.log(PortfolioLInk);
+    console.log(PortfolioLink);
 
