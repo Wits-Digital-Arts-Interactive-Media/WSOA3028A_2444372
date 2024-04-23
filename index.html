@@ -32,7 +32,10 @@
          "URL": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2444372/"}]
     } 
     </script>
-    
+    <script type="module"> import { initialise } from "./JavaScript Code/menu.js"
+        initialise("Home") 
+    </script>
+   
 </head>
 <body>
 <h1> Dumziii's World</h1>
@@ -40,17 +43,7 @@
     <header> 
         Dumziiii's World<!--the header tag starts here as this section is related to the headings for each hyperlink text-->
         <nav>
-            <ul>
-                <!--Navigation links-->
-                 <li><strong>Home</strong></li><br>
-                 <li><a href = "Profile.html"  id="link_profile">Profile</a></li><br>
-                 <li><a href = "BlogPage.html" id="link_blogs">Blogs</a></li><br>
-                 <li><a href="Design.html" id="link_designs">Design</a></li><br>
-                 <li><a href="Essays.html" id="link_essays">Essays</a></li><br>
-                 <li><a href = "Portfolio work.html" id="link_portfolio">Portfolio</a></li><br>
-                 <li><a href ="Social and Political Commentary.html" id="link_commentary">Commentary</a></li><br>
-                 <li><a href="Software Projects/Behance and Art Station.html" id="link_software">Software</a></li><br>
-             </ul>
+
         </nav>
     </header> <!--the header tag ends here-->
 
@@ -72,11 +65,11 @@
 </main>
 <hr>
 
+<script type="module" src="JavaScript Code/Hovering.js"></script> <!--moved the script tag here at the end of the body bc the dom would have parsed the html content before it interprets the js content-->
+
 <footer>
     <span> Brought to you  by<em> Dumziii Mofolo </em>2024</span>
 </footer>
-
-<script src="JavaScript Code/Hovering.js"></script> <!--moved the script tag here at the end of the body bc tyhe dom would have parsed the html content before it interprets the js content-->
 
 </body>
 
