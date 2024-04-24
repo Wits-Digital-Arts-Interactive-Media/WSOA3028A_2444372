@@ -1,13 +1,13 @@
 const root = "/WSOA3028A_2444372"
 const menuItemss = [
-    { name: "Home", href: `${root}./index.html`},
-    { name: "Profile", href: `${root}./Profile.html`},
-    { name: "Blogs", href: `${root}./BlogPage.html`},
-    { name: "Design", href: `${root}./Design.html`},
-    { name: "Essays", href: `${root}./Essays.html`},
-    { name: "Portfolio", href: `${root}./Portfolio work.html`},
-    { name: "Commentary", href: `${root}./Social and Political Commentary.html`},
-    { name: "Software", href: `${root}./Behance and Art Station.html`},
+    { name: "Home", href: `${root}/index.html`},
+    { name: "Profile", href: `${root}/Profile.html`},
+    { name: "Blogs", href: `${root}/BlogPage.html`},
+    { name: "Design", href: `${root}/Design.html`},
+    { name: "Essays", href: `${root}/Essays.html`},
+    { name: "Portfolio", href: `${root}/Portfolio work.html`},
+    { name: "Commentary", href: `${root}/Social and Political Commentary.html`},
+    { name: "Software", href: `${root}/Behance and Art Station.html`},
 ];
 // i added my hovering fucntionality here so that when users hover over the navigation links it converys them to uppercase// i added my hovering fucntionality here so that when users hover over the nagigation links it converys them to uppercase
 function handleMouseOver(event) {
