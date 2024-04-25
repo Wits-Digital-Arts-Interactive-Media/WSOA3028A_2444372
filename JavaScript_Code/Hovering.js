@@ -1,3 +1,4 @@
+
 //in here im  initialising the various variables by attaching the elements  ids in my html doccie so that they'll be accessed directly
 const profileLink = document.getElementById("link_profile");
 const blogsLink = document.getElementById("link_blogs");

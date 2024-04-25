@@ -1,4 +1,4 @@
-//practicing my java
+//practicing my javascript
 function MyperfectSquares(){
     let A = 1;
     let x = 3;
