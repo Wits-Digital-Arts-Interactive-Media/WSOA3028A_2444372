@@ -4,7 +4,6 @@ const menuItemss = [
     { name: "Profile", href: `${root}/Profile/Profile.html`},
     { name: "Blogs", href: `${root}/Weekly_Blogs/BlogPage.html`},
     { name: "Design", href: `${root}/Design/Design.html`},
-    { name: "Styles", href: `${root}/Design/StylesGuide.html`},
     { name: "Essays", href: `${root}/Essays/Essays.html`},
     { name: "Portfolio", href: `${root}/Portfolio/Portfolio work.html`},
     { name: "Commentary", href: `${root}/Commentary/Social and Political Commentary.html`},
