@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {//callback initiation 
     let reactionCounts = {}; // Initialize as an empty object
 
     function updateReactionaryCounts() {
-        reactionPos.innerHTML = '';
+        reactionPos.innerHTML = "";
         for (const [emoji, count] of Object.entries(reactionCounts)) {
             const reactionElement = document.createElement("span");
             reactionElement.textContent = `${emoji}: ${count}`;

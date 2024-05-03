@@ -31,5 +31,6 @@ if(nickName){// in here im checking if the users name is saved in my local storr
      header.textContent = `Hey ${nameInput}:), glad you are here. `;
     }
     console.log("yeah yeah its working stop stressing xD");//for my own piece of mind to see if its workinggg xD!
+ console.log("what is yur idea of what you're trying to do , lmaooo");
 }
 });

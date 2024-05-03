@@ -35,7 +35,7 @@ export function initialise(currentPage) {
         ul.appendChild(li);
     }
     nav.appendChild(ul);
-    
+    console.log("i dont even know whatgti say to test if  the game works or not");
     console.log("Menu is workingggg broooo!");//for my own piece of mind , i have this showig to prove its working .
 };
 

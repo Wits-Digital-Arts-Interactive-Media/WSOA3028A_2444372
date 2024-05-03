@@ -17,3 +17,4 @@ document.addEventListener("DOMContentLoaded", function() {//this is a call back(
     } console.log("its working my bruddda");//for my own piece of kind , inned see this message xd !
     }) 
 });
+ 
