@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {//this is a call back(
     const nameLabel = document.querySelector("label[for='nameInput']");
     nameLabel.style.textAlign = "center";//im centering my input field label so that it looks better xD
     const welcomeMessage = document.getElementById("Welcome Message");
+    
 
     form.addEventListener("submit", function(event){//since this is a button, it would the  need an event listner with an event teken as the paramenter
       event.preventDefault();// not allowing users to submit without putting in their names, so that it is not just submitted empty  and stuff xd

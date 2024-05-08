@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {//callback initiation 
     // indicate the dom trees is ready so its safe to manipulate the content for js purposes/functionalities
 
     const reactionForm = document.getElementById("reactionForm");
-    const reactionPos = document.querySelector("hearder");
+    const reactionPos = document.querySelector("header");
     let reactionCounts = {}; // Initialize as an empty object
 
     function updateReactionaryCounts() {
