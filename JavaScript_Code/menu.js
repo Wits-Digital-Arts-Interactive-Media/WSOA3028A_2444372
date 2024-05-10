@@ -4,13 +4,14 @@ const menuItemss = [
     { name: "Profile", href: `${root}/Profile/Profile.html`},
     { name: "Blogs", href: `${root}/Weekly_Blogs/BlogPage.html`},
     { name: "Design", href: `${root}/Design/Design.html`},
+    { name: "StylesGuide", href: `${root}/Design/StylesGuide.html`},
     { name: "Essays", href: `${root}/Essays/Essays.html`},
     { name: "Portfolio", href: `${root}/Portfolio/Portfolio work.html`},
     { name: "Commentary", href: `${root}/Commentary/Social and Political Commentary.html`},
     { name: "Software", href: `${root}/Software/Behance and Art Station.html`},
 ];
 
-// i added my hovering fucntionality here so that when users hover over the navigation links it converys them to uppercase// i added my hovering fucntionality here so that when users hover over the nagigation links it converys them to uppercase
+// i added my hovering functionality here so that when users hover over the navigation links it converys them to uppercase// i added my hovering fucntionality here so that when users hover over the nagigation links it converys them to uppercase
 function handleMouseOver(event) {
     event.target.innerText = event.target.innerText.toUpperCase();
 }
@@ -23,7 +24,7 @@ export function initialise(currentPage) {
     const nav = document.querySelector("header > nav");
     const ul = document.createElement("ul");
     for (let menuItem of menuItemss) {
-        const li = document.createElement("li");
+        const li = document.createElement("li");//this is table data cell  that will be appened to the table row
         const a = document.createElement("a");
         a.innerText = menuItem.name;
         a.setAttribute("href", menuItem.href);
@@ -32,10 +33,9 @@ export function initialise(currentPage) {
             a.addEventListener("mouseout", handleMouseOut);
         }
         li.appendChild(a);
-        ul.appendChild(li);
+        ul.appendChild(li);//appending the table data cell to the table row element as mentioned
     }
     nav.appendChild(ul);
-    console.log("i dont even know whatgti say to test if  the game works or not");
     console.log("Menu is workingggg broooo!");//for my own piece of mind , i have this showig to prove its working .
 };
 
