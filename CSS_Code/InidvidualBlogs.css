@@ -1,0 +1,50 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #033825;
+}
+.p-name{
+    color: limegreen;
+  }
+  .Blog{
+    text-align: left;
+    color: lemonchiffon;
+    
+  }
+  .heading{
+    justify-content:left;
+    color: lemonchiffon;
+    font-size:20px;
+  }
+.p-summary{
+color: lemonchiffon;
+}
+a[href]:hover{
+color: gold;
+}
+a{
+color: darkorange;
+}
+p{
+    color: limegreen;
+    font-size: medium;
+}
+#ref{
+color: forestgreen;
+}
+li{
+  color: white;
+  font-size: medium;
+}
+.Nav span a{
+    justify-content: left;
+    background-color: green;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: orange;
+    }
+.Nav span a:hover{
+    background-color: darkgreen;
+    color: gold;
+    }

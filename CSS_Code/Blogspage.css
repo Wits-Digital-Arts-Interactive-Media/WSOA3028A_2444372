@@ -1,0 +1,111 @@
+ /* The blogs Page*/
+ *{
+    font-family: Georgia, 'Times New Roman', Times;
+    background-color: #033825;
+ }
+    .BloggyPage {
+        color: lemonchiffon;
+        justify-content: left;
+        font-style: italic;
+    }
+    
+    #test {
+        font-size: 25px;
+        color: lemonchiffon;
+        position: relative;
+        font-style: italic;
+    }
+    header{
+        color: gold;
+        justify-content: left;
+    }
+    .Intro {
+        color: lemonchiffon;
+        font-size: medium;
+    }
+    
+    #test span {
+        position: relative;
+        display: inline-flex;
+    }
+    
+    .button span a {
+        background-color: darkgreen;
+        display: inline-block;
+        border-radius: 40px;
+        padding: 20px;
+        text-decoration: none;
+        color: gold;
+    }
+    
+    .button span a:hover {
+        background-color: darkorange;
+    }
+    
+    .list-container {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px; 
+        overflow-x: auto;
+    }
+    
+    li {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        box-shadow: 0 0 30px rgba(1, 1, 1, 0.2);
+        text-align: center;
+        cursor: pointer;
+        list-style-type: none; 
+    }
+    
+    li#testing00:hover {
+        box-shadow: 0 0 20px darkorange;
+        transform: scale(1.1);
+    }
+    
+    li#testing01:hover {
+        box-shadow: 0 0 20px limegreen;
+        transform: scale(1.1);
+    }
+    
+    li#testing02:hover {
+        box-shadow: 0 0 20px darkorange;
+        transform: scale(1.1);
+    }
+    
+    li#testing03:hover {
+        box-shadow: 0 0 20px limegreen;
+        transform: scale(1.1);
+    }
+    
+    li#testing04:hover {
+        box-shadow: 0 0 20px darkorange;
+        transform: scale(1.1);
+    }
+    
+    li#testing05:hover {
+        box-shadow: 0 0 20px limegreen;
+        transform: scale(1.1);
+    }
+    
+    li#testing06:hover {
+        box-shadow: 0 0 20px darkorange;
+        transform: scale(1.1);
+    }
+    
+    li#testing07:hover {
+        box-shadow: 0 0 20px limegreen;
+        transform: scale(1.1);
+    }
+    
+    li#testing08:hover {
+        box-shadow: 0 0 20px darkorange;
+        transform: scale(1.1);
+    }
+    
+    li#testing09:hover {
+        box-shadow: 0 0 20px limegreen;
+        transform: scale(1.1);
+    }
+    

@@ -35,29 +35,35 @@
     <script type="module"> import { initialise } from "./JavaScript_Code/menu.js"
         initialise("Home") 
     </script>
-    <script src="./JavaScript_Code/Header.js"></script>
+    <script src="./JavaScript_Code/Header.js" defer></script>
+    <script src="./JavaScript_Code/Animate.js"></script> <!--calling the animation script here-->
+    <link rel="stylesheet" href="./CSS_Code/styles.css"> <!--calling the css code here-->
    
 </head>
 <body>
 <h1> Dumziii's World</h1>
 <hr>
     <header> 
-        Dumziiii's Website<!--the header tag starts here as this section is related to the headings for each hyperlink text-->
+        Dumziiii's World<!--the header tag starts here as this section is related to the headings for each hyperlink text-->
         <nav>
+           
 
         </nav>
     </header> <!--the header tag ends here-->
 
 <hr>
 
-<main> <!--Main Content -->
+<main id="content"> <!--Main Content -->
+   <!----
+    <a href="../Software/Behance and Art Station.html">
     <picture>
-       <img src="./Images/Welcome Image.png", alt="Introductory Greetings with Authors Nickname and last name." width="850px" height="400px"> <title>Greetings text</title>
+       <img id="Logo" src="./Images/Welcome Image.png", alt="Authors smilling picture as a  clickable logo" title="The author smiling" width="230px" height="232px">
     </picture>
-    
+    </a>
+-->
     <section>
-    <h2>Description</h2>
-    <p1> Dumziii's World is one filled all things web development. In here, you will find thoughts expressed about the internet,
+    <h2 class="description">Description</h2>
+    <p1 class="Description-text"> Dumziii's World is one filled all things web development. In here, you will find thoughts expressed about the internet,
         the world wide web,social and political commentary  and a variety body of work by yours truly. Enjoy!
     </p1>
     <br>
@@ -65,7 +71,7 @@
 </main>
 <hr>
 
-<footer>
+<footer class="index">
     <span> Brought to you  by<em> Dumziii Mofolo </em>2024</span>
 </footer>
 

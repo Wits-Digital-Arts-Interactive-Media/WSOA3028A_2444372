@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {//callback initiation to  l
     // Function to animate text in a wavy-like format. this was really just to make it look "cool" for aesthetic purporses
     function animateText(text) {
         let result = '';
-        const amplitude = 15; // Amplitude of the wave
+        const amplitude = 24; // Amplitude of the wave
         const frequency = 0.3; // Frequency of the wave
         for (let i = 0; i < text.length; i++) {
             const offsetValue = amplitude * Math.sin(frequency * i);
-            result += `<span style="position:relative; top:${offsetValue}px">${text[i]}</span>`;
+            result += `<span style="position:relative; top:${offsetValue}px">${text[i]}</span>`; //using template litrals within the string interpolation so my code is easily readaable
         }
         return result;
     }

@@ -1,0 +1,138 @@
+*{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: #033825;
+}
+
+/*  For the index page:*/
+
+h1 {
+    text-align: left;
+    color: lemonchiffon;
+    display: flex;
+    height: 13vh;
+    justify-content: center;
+    font-size: 2.5rem;
+    overflow: hidden;
+  } 
+h1 span { /* inceasing the order of specificity by targeting the span element */
+    display: block;
+    animation: bounce 1s infinite ease-in-out; /* i have an animation that make the text bounce repeatedly every after 1 second*/
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* this is to  ensure that the text bounces in vertical format, hence im only changing the y-value*/
+    }
+}
+  .description{
+    text-align: left;
+    color: gold 
+  }
+  .Description-text{
+    color: lemonchiffon;
+    font-size: medium;
+   }
+header, nav { /* using multiple seclectors here to avoid repetitive code */
+  color: lemonchiffon;
+  text-align: left;
+  }
+.index span{ 
+    color: lime;
+    height: 10px; 
+}
+
+  /* For the profile page:*/
+  
+  .heading1{
+    color: lemonchiffon;
+    font-size: 2rem;
+  }
+  #Profile {
+    justify-content: left;
+    color: lemonchiffon;
+    font-style: italic;
+  }
+  header, nav:hover{
+    color: gold;
+  }
+  figcaption{
+    color: darkorange;
+  }
+  @keyframes party {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  
+  }
+  .image-transition {
+    animation: party 1s ease-in;
+  }
+  .u-email.address:hover {
+    color: gold;
+}
+  p{
+    color: lemonchiffon;
+    display: block;
+  }
+  .p-org, .p-locality, .p-country-name, span {
+    color:lemonchiffon;
+    display: contents;
+  }
+  /* Media queries for responsiveness */
+@media only screen and (max-width: 479px) {
+  header{
+    display: block;
+    flex-wrap: nowrap;
+  }
+  }
+   /* Inside the Critical Reflection Page*/
+  .p-name{
+    color: forestgreen;
+  }
+.p-summary{
+color: lemonchiffon;
+}
+a[href]:hover{
+color: gold;
+}
+a, p{
+color: darkorange;
+}
+#ref{
+color: lemonchiffon;
+}
+li{
+  color: blue;
+  font-size: medium;
+}
+
+.Nav span a{
+justify-content: left;
+background-color:  darkgreen;
+display: inline-block;
+border-radius: 10px;
+padding: 20px;
+text-decoration: none;
+color: darkorange;
+}
+.Nav span a:hover{
+background-color: darkgreen;
+color: gold;
+}
+.index span{ 
+color: lime;
+height: 10px; 
+}
+ 

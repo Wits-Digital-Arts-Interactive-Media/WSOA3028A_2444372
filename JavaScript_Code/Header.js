@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {//callback initialiation(as Mike Geyser would say),  which basically renders or parses all content needed to construct the dom tree i.e the html before it can execute the js
 const header= document.querySelector("h1");
-const headertxt = " Welcome to Dumziii's Website";
+const headertxt = "";
 let  index = 0;//initialising the first letter as index o
 
 function animateHeaderText(text){
     if (!header) { // here i was just checking if the hheader text place was found by the query selector si i get notidied if its not by the console error message
         console.error("No <h1> element found.");
-        return;
+        return;//just chyekcing if it can actually find the h1 tag
     }
     
 function ShowHeaderTxt(){
@@ -31,6 +31,6 @@ if(nickName){// in here im checking if the users name is saved in my local storr
      header.textContent = `Hey ${nameInput}:), glad you are here. `;
     }
     console.log("yeah yeah its working stop stressing xD");//for my own piece of mind to see if its workinggg xD!
- console.log("what is yur idea of what you're trying to do , lmaooo");
+ 
 }
 });

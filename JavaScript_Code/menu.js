@@ -1,6 +1,6 @@
 const root = "/WSOA3028A_2444372";
 const menuItemss = [
-    { name: "Home", href:  root + "/index.html"},
+    { name: " Home", href:  root + "/index.html"},
     { name: "Profile", href: `${root}/Profile/Profile.html`},
     { name: "Blogs", href: `${root}/Weekly_Blogs/BlogPage.html`},
     { name: "Design", href: `${root}/Design/Design.html`},
@@ -22,9 +22,11 @@ function handleMouseOut(event) {//converts back to lover case using the event ta
 
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav");
-    const ul = document.createElement("ul");
+    const table = document.createElement("table");
+    const tr = document.createElement("tr");
+
     for (let menuItem of menuItemss) {
-        const li = document.createElement("li");//this is table data cell  that will be appened to the table row
+        const td = document.createElement("td");//this is table data cell  that will be appened to the table row
         const a = document.createElement("a");
         a.innerText = menuItem.name;
         a.setAttribute("href", menuItem.href);
@@ -32,10 +34,27 @@ export function initialise(currentPage) {
             a.addEventListener("mouseover", handleMouseOver);
             a.addEventListener("mouseout", handleMouseOut);
         }
-        li.appendChild(a);
-        ul.appendChild(li);//appending the table data cell to the table row element as mentioned
+        td.appendChild(a);
+        tr.appendChild(td);//appending the table data cell to the table row element as mentioned
     }
-    nav.appendChild(ul);
+    table.appendChild(tr)
+    nav.appendChild(table);
+
+    const style = document.createElement("style");//adding the CSS element here to "style" the way my navigation row spacially look like with each other
+    style.textContent = `
+    td {
+        padding: 25px; 
+    }
+    a{
+        color: forestgreen;
+    }
+    a:hover{
+        color: gold;
+    }
+`   ;
+// here im using the css style element to make my spacing of the row elements look reasonably spaced out i.e 50m from each other 
+    document.head.appendChild(style);//appending the style elements to the overall webapge of the whole site
+
     console.log("Menu is workingggg broooo!");//for my own piece of mind , i have this showig to prove its working .
 };
 

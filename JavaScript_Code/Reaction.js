@@ -32,4 +32,20 @@ document.addEventListener("DOMContentLoaded", function() {//callback initiation 
         alert(`Thank you for your reaction to this blog. I hope you found it insightful:) You reacted with ${selectedEmoji}. Like count: ${reactionCounts[selectedEmoji]}`);
         console.log("the reactions are workinggg");
     });
+    //i decided to do the styling of the reaction buttons here as it's easier
+    const button = document.querySelector("button[type='submit']");
+    const button01 = document.querySelector("button[type='submit01']");
+    const button02 = document.querySelector("button[type='submit02']");
+    button.style.backgroundColor = "bronze";
+    button.style.borderRadius = "20px";
+    button.style.width =  "50px";
+    button.style.height = "50px";
+    button01.style.backgroundColor = "bronze";
+    button01.style.borderRadius = "20px";
+    button01.style.width =  "50px";
+    button01.style.height = "50px";
+    button02.style.backgroundColor = "bronze";
+    button02.style.borderRadius = "20px";
+    button02.style.width =  "50px";
+    button02.style.height = "50px";
 });
