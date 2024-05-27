@@ -53,8 +53,7 @@ export function initialise(currentPage) {
     }
 `   ;
 // here im using the css style element to make my spacing of the row elements look reasonably spaced out i.e 50m from each other 
-    document.head.appendChild(style);//appending the style elements to the overall webapge of the whole site
-
+    document.head.appendChild(style);//appending the style elements to the overall webpage of the whole site
     console.log("Menu is workingggg broooo!");//for my own piece of mind , i have this showig to prove its working .
 };
 

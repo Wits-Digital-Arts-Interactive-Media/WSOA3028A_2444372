@@ -2,13 +2,26 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: #033825;
 }
+h1{
+  color: lemonchiffon;
+}
+
+#Changes{
+  color: forestgreen;
+}
+
+#caption{
+  color: forestgreen;
+}
+.Underline{
+  color: lemonchiffon;
+}
 .p-name{
     color: limegreen;
   }
   .Blog{
     text-align: left;
     color: lemonchiffon;
-    
   }
   .heading{
     justify-content:left;
@@ -31,6 +44,19 @@ p{
 #ref{
 color: forestgreen;
 }
+#Part{
+  color: forestgreen;
+}
+.title{
+  color: lemonchiffon;
+}
+#Main{
+  color: gold;
+}
+.index span{ 
+  color: lime;
+  height: 10px; 
+  }
 li{
   color: white;
   font-size: medium;
@@ -47,4 +73,4 @@ li{
 .Nav span a:hover{
     background-color: darkgreen;
     color: gold;
-    }
+    };

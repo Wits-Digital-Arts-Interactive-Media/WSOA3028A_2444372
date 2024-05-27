@@ -1,10 +1,9 @@
+
 *{
   font-family:Georgia, 'Times New Roman', Times, serif;
   background-color: #033825;
 }
-
 /*  For the index page:*/
-
 h1 {
     text-align: left;
     color: lemonchiffon;
@@ -13,8 +12,13 @@ h1 {
     justify-content: center;
     font-size: 2.5rem;
     overflow: hidden;
+    font-style: italic;
   } 
-h1 span { /* inceasing the order of specificity by targeting the span element */
+  #Titlesss{
+    text-align: left;
+    color: lemonchiffon;
+  }
+h1 span { /* increasing the order of specificity by targeting the span element */
     display: block;
     animation: bounce 1s infinite ease-in-out; /* i have an animation that make the text bounce repeatedly every after 1 second*/
 }
@@ -35,7 +39,7 @@ h1 span { /* inceasing the order of specificity by targeting the span element */
     color: lemonchiffon;
     font-size: medium;
    }
-header, nav { /* using multiple seclectors here to avoid repetitive code */
+header, nav { /* using multiple selectors to avoid repetitive code */
   color: lemonchiffon;
   text-align: left;
   }
@@ -45,10 +49,10 @@ header, nav { /* using multiple seclectors here to avoid repetitive code */
 }
 
   /* For the profile page:*/
-  
   .heading1{
     color: lemonchiffon;
     font-size: 2rem;
+    font-style: italic;
   }
   #Profile {
     justify-content: left;
@@ -95,6 +99,9 @@ header, nav { /* using multiple seclectors here to avoid repetitive code */
   header{
     display: block;
     flex-wrap: nowrap;
+    float: none;
+    width: 100%;
+    margin-right: right;
   }
   }
    /* Inside the Critical Reflection Page*/
@@ -117,7 +124,6 @@ li{
   color: blue;
   font-size: medium;
 }
-
 .Nav span a{
 justify-content: left;
 background-color:  darkgreen;
@@ -135,4 +141,9 @@ color: gold;
 color: lime;
 height: 10px; 
 }
- 
+#Title{
+  color: lemonchiffon;
+}
+#ref{
+  color: forestgreen;
+  }
