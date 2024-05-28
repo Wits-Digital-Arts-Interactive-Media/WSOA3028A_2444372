@@ -19,6 +19,11 @@ function handleMouseOver(event) {
 function handleMouseOut(event) {//converts back to lover case using the event target where the mouse will be
     event.target.innerText = event.target.innerText.toLowerCase();
 }
+function toggleMenu(){ //this function is to toggle the menu to activate or open each time the hamburger menu item is clicked
+    const nav = document.querySelector("header > nav");
+    nav.classList.toggle("open")
+}
+
 
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav");
