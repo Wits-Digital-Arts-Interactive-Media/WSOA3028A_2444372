@@ -32,21 +32,21 @@
            "URL": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2444372/"}]
       }
      </script>
-     <script type="module"> import { initialise } from "../JavaScript_Code/menu.js"
-        initialise("StylesGuide") 
-       </script>
        <link href="..//CSS_Code/styles.css" rel="stylesheet">
        
 
 </head>
+<body>
 <h1>Dumziii's Color Palettes Designs</h1>
    <header>
-        Dumziii's World
+       <div>Dumziii's World</div>
         <hr>
         <nav>
            
         </nav>
+        <div class="hamburger"style="float: right;">&#9776;</div>
    </header>
+   <hr>
 <main>
 <h1 id="Title"><u>Style Guide Process:</u></h1>
 <article>
@@ -62,7 +62,7 @@
       By using colours such as green, red and blue, users are able to relate their <strong style="color: white;"> conventional understanding of colour theory</strong> to the use of symbols to intuitively traverse the website smoother 
       with less or organized cognitive overload.
      </p>
-     As such , The following are the color palettes I have decided to go with:
+     <p id="ref">As such , The following are the color palettes I have decided to go with:</p>
      <picture>
          <figure>
              <img src="../Images/Color Palletes Design.png" alt= "A picture showing RGB values of various shades of green color palettes" title="Various shades of green color palettes from Coolors" width="500px" height="430px">
@@ -222,7 +222,13 @@
 <footer id="index">
     <span>Brought to you by <em>Dumzii Mofolo</em> 2024</span>
 </footer>
-<body>
-    
+  <!-- I included the script tag here bc I wnatedall the html content at the top to be loaded and parsed fully before it can load the one below-->
+  <script type="module">
+    import { initialise } from "../JavaScript_Code/menu.js";
+    document.addEventListener("DOMContentLoaded", () => {
+        initialise("StylesGuide");
+    });
+</script>
+
 </body>
 </html>

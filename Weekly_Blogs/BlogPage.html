@@ -31,9 +31,6 @@
          "URL": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2444372/"}]
     }
    </script>
-   <script type="module"> import { initialise } from "../JavaScript_Code/menu.js"
-    initialise("Blogs") 
-   </script>
    <script src="../JavaScript_Code/Wavy.js"></script>
    <link href="../CSS_Code/Blogspage.css" rel="stylesheet">
   
@@ -43,10 +40,13 @@
     <h1 class="BloggyPage">Dumziii's Blogs</h1>
     <h2 id="test"></h2>
 <header>
-   Dumziii's World
+   <div>Dumziii's World</div>
+   <hr>
         <nav>
           
         </nav>
+        <div class="hamburger" style="float: right;">&#9776;</div> <!-- Include the hamburger element -->
+        <hr>
 </header>
 <main class="Tiles">
     <p1 class="Intro">Here are the links to my weekly blogs:</p1> <!---Navigation links to each blog post-->
@@ -86,6 +86,12 @@
 <footer class="button">
     <span><a href="../Weekly_Blogs/BlogPage.html">Back to Top</a></span>
 </footer>
-
+ <!-- Include the script at the end of the body -->
+ <script type="module">
+    import { initialise } from "../JavaScript_Code/menu.js";
+    document.addEventListener("DOMContentLoaded", () => {
+        initialise("Blogs");
+    });
+</script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 
 *{
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family:Georgia, 'Times New Roman', Times, serif  !important;
   background-color: #033825;
+  font-style: italic;
 }
 /*  For the index page:*/
 h1 {
@@ -93,16 +94,6 @@ header, nav { /* using multiple selectors to avoid repetitive code */
   .p-org, .p-locality, .p-country-name, span {
     color:lemonchiffon;
     display: contents;
-  }
-  /* Media queries for responsiveness */
-@media only screen and (max-width: 479px) {
-  header{
-    display: block;
-    flex-wrap: nowrap;
-    float: none;
-    width: 100%;
-    margin-right: right;
-  }
   }
    /* Inside the Critical Reflection Page*/
   .p-name{

@@ -30,29 +30,29 @@
              "URL": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2444372/"}]
         }
        </script>
-       <script type="module"> import { initialise } from "../JavaScript_Code/menu.js"
-        initialise("Commentary") 
-       </script>
        <script src="../JavaScript_Code/Wavy.js"></script>
        <link href="..//CSS_Code/styles.css" rel="stylesheet">
 </head>
 <body>
     <h1>Dumziii's Socio-political thoughts and discourses</h1>
     <h2 id="test"></h2>
+    <hr>
     <header>
-        Dumziii's World
+        <div>Dumziii's World</div>
         <nav>
            
         </nav>
+        <div class="hamburger" style="float: right;">&#9776;</div>
     </header>
     
     <hr>
 
     <main>
         <h1>Let's talk Current Affairs with Dumziii Mofolo</h1>
+        <hr>
     <h2 id="Title">Global Events: South Africa's involvement in fighting and standing up for Palestine in the ICJ</h2>
         <nav>
-            <a href="https://www.aljazeera.com/news/liveblog/2024/1/11/israels-war-on-gaza-live-israel-pounds-gaza-ahead-of-icj-genocide-hearing">Educate yourself</a>
+            <a href="https://www.aljazeera.com/news/liveblog/2024/1/11/israels-war-on-gaza-live-israel-pounds-gaza-ahead-of-icj-genocide-hearing" target="_blank">Educate yourself</a>
         </nav>
     <article>
         <section>
@@ -71,9 +71,17 @@
     <h3 id="Title">All things Political Party Manifestos: South Africa's Upcoming Voting Elections</h3>
     <hr>
     <article>
-        <section>
-            <p>DA's Manifesto Review and Analysis:</p>
-
+        <section id="ref">
+            <p>Rise Mzansi  Manifesto Review and Analysis:</p>
+            
+            <a href="https://youtu.be/Uq7itjSpEHo?si=0g1_PNmIt1lmmlnE" target="_blank">Amahle Gebane  Rise Mzansi Manifesto Review: election education Part 1</a>
+            <br>
+            <br>
+           "One of the ways I feel that the Constitution failed us, is by giving almost absolute protection to Western property 
+            rights in section 25 which has made it difficult for land equity in S.A post 1994. It basically made it okay for 
+            Apartheid benefactors to keep everything they had and gave them protection. It basically legitimized colonial land theft. 
+            It's considered a compromise in that it allowed for redistribution and also recognizes customary property rights but those 
+            usually only apply in Bantustans typically"<cite style="color: white;">(Gebane, 2024)</cite>.
         </section>
     </article>
       
@@ -82,6 +90,12 @@
     <footer class="index" style="color: lime;">
         <span>Brought to you by <em>Dumziii  Mofolo</em> 2024 </span>
     </footer>
-    
+    <!-- I included the script tag here bc I wnatedall the html content at the top to be loaded and parsed fully before it can load the one below-->
+  <script type="module">
+    import { initialise } from "../JavaScript_Code/menu.js";
+    document.addEventListener("DOMContentLoaded", () => {
+        initialise("Commentary");
+    });
+</script>
 </body>
 </html>

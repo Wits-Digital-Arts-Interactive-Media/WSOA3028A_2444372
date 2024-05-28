@@ -32,11 +32,6 @@
          "URL": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2444372/"}]
     } 
     </script>
-    <script type="module"> import { initialise } from "./JavaScript_Code/menu.js"
-        initialise("Home") 
-    </script>
-    <script src="./JavaScript_Code/Header.js" defer></script>
-    <script src="./JavaScript_Code/Animate.js"></script> <!--calling the animation script here-->
     <link rel="stylesheet" href="./CSS_Code/styles.css"> <!--calling the css code here-->
    
 </head>
@@ -44,11 +39,13 @@
 <h1> Dumziii's World</h1>
 <hr>
     <header> 
-        Dumziiii's World<!--the header tag starts here as this section is related to the headings for each hyperlink text-->
+        <div>Dumziiii's World</div><!--the header tag starts here as this section is related to the headings for each hyperlink text-->
+
         <nav>
            
 
         </nav>
+        <div class="hamburger" style="float: right;">&#9776;</div> <!--the hamburger div will be clalled here-->
     </header> <!--the header tag ends here-->
 
 <hr>
@@ -74,6 +71,16 @@
 <footer class="index">
     <span> Brought to you  by<em> Dumziii Mofolo </em>2024</span>
 </footer>
+
+<!-- Scripts placed at the end of the body to -->
+<script type="module">
+    import { initialise } from "../JavaScript_Code/menu.js";
+    document.addEventListener("DOMContentLoaded", () => {
+        initialise("Home");
+    });
+</script>
+<script src="../JavaScript_Code/Header.js" defer></script>
+<script src="../JavaScript_Code/Animate.js"></script>
 
 </body>
 

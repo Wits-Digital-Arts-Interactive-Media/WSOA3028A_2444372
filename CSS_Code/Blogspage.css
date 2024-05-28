@@ -1,6 +1,6 @@
  /* The blogs Page*/
  *{
-    font-family: Georgia, 'Times New Roman', Times;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
     background-color: #033825;
  }
     .BloggyPage {

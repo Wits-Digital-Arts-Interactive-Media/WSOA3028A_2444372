@@ -30,27 +30,33 @@
          "URL": "https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2444372/"}]
     }
    </script>
-   <script type="module"> import { initialise } from "../JavaScript_Code/menu.js"
-    initialise("Portfolio") 
-   </script>
+   <link href="../CSS_Code/styles.css" rel="stylesheet">
 </head>
 <body>
   <h1> Dumziii's Body of Work</h1>
+  <hr>
         <header>
-          Dumziii's World
+          <div>Dumziii's World</div>
            <nav>
            
            </nav>
-
+          <div class="hamburger" style="float: right;">&#9776;</div>
         </header>
   <main>
 
   </main>
 
 <hr>
-  <footer>
+  <footer class="index">
     <span>Brought to you by <em>Dumziii Mofolo</em> 2024</span>
   </footer> 
+   <!-- I included the script tag here bc I wnatedall the html content at the top to be loaded and parsed fully before it can load the one below-->
+   <script type="module">
+    import { initialise } from "../JavaScript_Code/menu.js";
+    document.addEventListener("DOMContentLoaded", () => {
+        initialise("Portfolio");
+    });
+</script>
 
 </body>
 </html>
