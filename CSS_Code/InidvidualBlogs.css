@@ -6,7 +6,11 @@
 h1{
   color: lemonchiffon;
 }
-
+.Essays{
+  color: darkorange;
+  font-style: italic;
+  font-size: 20px;
+}
 #Changes{
   color: forestgreen;
 }
@@ -28,6 +32,11 @@ h1{
     justify-content:left;
     color: lemonchiffon;
     font-size:20px;
+  }
+  .heading1{
+    color: lemonchiffon;
+    font-size: 2rem;
+    font-style: italic;
   }
 .p-summary{
 color: lemonchiffon;

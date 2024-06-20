@@ -1,0 +1,39 @@
+/* Media queries for responsiveness */
+@media only screen and (max-width: 479px) {
+    .Animate {
+        display: block;
+        flex-wrap: nowrap;
+        float: none;
+        width: 100%;
+        font-size: 35px;
+    }
+    .pointer{
+        font-size: 15px;
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .Animate.nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav.open {
+        display: flex;
+    }
+    .pointer{
+        font-size: 18px;
+        justify-content: center;
+    }
+}
+.Animate{
+    text-align: center;
+    cursor: pointer;
+    visibility: visible;
+}
+.pointer {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 30px;
+    color: #000;
+}

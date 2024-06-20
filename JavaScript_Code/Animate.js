@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const h1 = document.querySelector("h1");
+    const h1 = document.querySelector("h1.Animate");
     if(!h1){
         console.error("no h1 tag found on sighhht, plsss check if you have the tagg");
         return;
@@ -57,10 +57,25 @@ function bounceBubbles() {
         });
     });
 }
-    ShowHeaderTxt();
-    setTimeout(() =>{
+function AddPointerIcons(){
+    const leftPointerIcon = document.createElement("span");
+    const rightPointerIcon = document.createElement("span");
+
+    leftPointerIcon.textContent = "👉";
+    rightPointerIcon.textContent = "👈"; //addds the left and right pointing emojis as the text content
+
+    leftPointerIcon.classList.add = "pointer"; //adds the classes of the pointer icon emojis above
+    rightPointerIcon.classList.add = "pointer";
+
+   h1.prepend(leftPointerIcon);
+   h1.appendChild(rightPointerIcon);
+}
+
+ ShowHeaderTxt();
+ setTimeout(() =>{
     drawName(headertxt, letterColors);
     bounceBubbles();
+    AddPointerIcons();
     }, headertxt.length *200 + 500);// to ensure that the header text shows right after. so these values are really just values in seconds.
 
 });

@@ -9,9 +9,9 @@ h1 {
     text-align: left;
     color: lemonchiffon;
     display: flex;
-    height: 13vh;
+    height: 23vh;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     overflow: hidden;
     font-style: italic;
   } 
@@ -49,7 +49,7 @@ header, nav { /* using multiple selectors to avoid repetitive code */
     height: 10px; 
 }
 
-  /* For the profile page:*/
+  /* For the profile page, design , style guide , commenrarfy , software and home page*/
   .heading1{
     color: lemonchiffon;
     font-size: 2rem;
@@ -112,7 +112,7 @@ color: darkorange;
 color: lemonchiffon;
 }
 li{
-  color: blue;
+  color: gold;
   font-size: medium;
 }
 .Nav span a{
@@ -138,3 +138,34 @@ height: 10px;
 #ref{
   color: forestgreen;
   }
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 479px) {
+    header {
+        display: contents;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column; /* Vertical format */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    nav.open {
+        display: flex;
+        flex-direction: column; /* Ensure vertical format when open */
+    }
+    table {
+        width: 100%;
+    }
+    td {
+        display: block; /* Ensure table cells are displayed as block elements */
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
