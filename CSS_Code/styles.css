@@ -9,9 +9,9 @@ h1 {
     text-align: left;
     color: lemonchiffon;
     display: flex;
-    height: 23vh;
+    height: 18vh;
     justify-content: center;
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     overflow: hidden;
     font-style: italic;
   } 

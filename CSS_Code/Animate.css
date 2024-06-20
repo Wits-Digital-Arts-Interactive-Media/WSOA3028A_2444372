@@ -1,39 +1,37 @@
-/* Media queries for responsiveness */
-@media only screen and (max-width: 479px) {
+/* Media queries for responsiveness: General styles */
     .Animate {
-        display: block;
-        flex-wrap: nowrap;
-        float: none;
-        width: 100%;
-        font-size: 35px;
+        text-align: center;
+        cursor: pointer;
+        visibility: visible;
+        white-space: none; /* Prevents text from wrapping */
+        overflow: hidden; /* Ensures content does not overflow */
+        text-overflow: ellipsis; /* Adds ellipsis if text overflows to symbolize continuation */
     }
-    .pointer{
-        font-size: 15px;
-        justify-content: center;
+    .pointer {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 30px;
+        color: #000;
     }
-}
-@media (max-width: 768px) {
-    .Animate.nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
+    
+    /* Media queries for responsiveness */
+    @media only screen and (max-width: 479px) {
+        .Animate {
+            font-size: 20px; /* Adjust font size for smaller screens */
+            padding: 0 10px; /* Add padding to ensure text doesn't touch screen edges */
+        }
+        .pointer {
+            font-size: 20px; /* Adjust pointer icon size for smaller screens */
+            justify-content: center;
+        }
     }
-    nav.open {
-        display: flex;
+    
+    @media (max-width: 768px) {
+        .Animate {
+            font-size: 25px; /* Adjust font size for medium screens */
+        }
+        .pointer {
+            font-size: 25px; /* Adjust pointer icon size for medium screens */
+            justify-content: center;
+        }
     }
-    .pointer{
-        font-size: 18px;
-        justify-content: center;
-    }
-}
-.Animate{
-    text-align: center;
-    cursor: pointer;
-    visibility: visible;
-}
-.pointer {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 30px;
-    color: #000;
-}
