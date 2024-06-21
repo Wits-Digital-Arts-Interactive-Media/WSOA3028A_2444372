@@ -36,9 +36,11 @@
         initialise("Home") 
     </script>
     <script src="./JavaScript_Code/Header.js" defer></script>
-    <script src="./JavaScript_Code/Animate.js"></script> <!--calling the animation script here-->
+    <script src="./JavaScript_Code/Animate.js" defer></script> <!--calling the animation script here-->
+    <script src="./JavaScript_Code/Expandable.js" defer></script>
     <link href="./CSS_Code/styles.css" rel="stylesheet"> <!--calling the css code here-->
     <link href="./CSS_Code/Animate.css" rel="stylesheet">
+    <link href="./CSS_Code/Expandable.css" rel="stylesheet">
     <title>Dumziii's Homepage</title>
    
 </head>
@@ -47,15 +49,22 @@
     <span class="pointer">left pointer icons symbol</span>
     <span class="pointer">right pointer icon symbol</span>
 </h1>
+<span class="subtitle"> Dumziiii's World<!--the header tag starts here as this section is related to the headings for each hyperlink text--></span>
 <hr>
+<div class="expandable">
+    <div class="expandable_title_bar">
+    <span class="expandable_title">Expandable Section (Click Me to Open)</span>
+    <ion-icon class="expandable_icon" name="chevron-back-outline"></ion-icon>
+    </div>
+<div class="expandable__content-wrapper">
+    <div class="expandable_content">
     <header> 
-        Dumziiii's World<!--the header tag starts here as this section is related to the headings for each hyperlink text-->
         <nav>
            
 
         </nav>
     </header> <!--the header tag ends here-->
-
+    </div>
 <hr>
 
 <main id="content"> <!--Main Content -->
@@ -66,20 +75,20 @@
     </picture>
     </a>
 -->
+    <hr>
     <section>
     <h2 class="description">Description</h2>
     <p1 class="Description-text"> Dumziii's World is one filled all things web development. In here, you will find thoughts expressed about the internet,
         the world wide web,social and political commentary  and a variety body of work by yours truly. Enjoy!
+        <hr>
     </p1>
-    <br>
     </section>
 </main>
-<hr>
-
 <footer class="index">
     <span> Brought to you  by<em> Dumziii Mofolo </em>2024</span>
 </footer>
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

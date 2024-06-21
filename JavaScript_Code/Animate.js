@@ -61,8 +61,8 @@ function AddPointerIcons(){
     const leftPointerIcon = document.createElement("span");
     const rightPointerIcon = document.createElement("span");
 
-    leftPointerIcon.textContent = "👉";
-    rightPointerIcon.textContent = "👈"; //addds the left and right pointing emojis as the text content
+    leftPointerIcon.textContent = "→";
+    rightPointerIcon.textContent = "←"; //addds the left and right pointing emojis as the text content
 
     leftPointerIcon.classList.add = "pointer"; //adds the classes of the pointer icon emojis above
     rightPointerIcon.classList.add = "pointer";
