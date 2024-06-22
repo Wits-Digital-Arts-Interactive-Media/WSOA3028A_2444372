@@ -8,6 +8,9 @@
         justify-content: left;
         font-style: italic;
     }
+    .subtitle{
+        color: gold;
+      }
     
     #test {
         font-size: 25px;

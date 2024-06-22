@@ -32,18 +32,28 @@
    <script type="module"> import { initialise } from "../JavaScript_Code/menu.js"
     initialise("Software") 
    </script>
+    <script src="../JavaScript_Code/Expandable.js" defer></script>
    <link href="..//CSS_Code/styles.css" rel="stylesheet">
+   <link href="../CSS_Code/Expandable.css" rel="stylesheet">
    <title>Dumziii's Software Projects</title>
 </head>
 <body>
     <h2 class="heading1">Software Projects</h2>
+    <span class="subtitle">Dumziii's World</span>
     <hr>
+    <div class="expandable">
+        <div class="expandable_title_bar">
+        <span class="expandable_title">Expandable Section (Toggle to ▲ & ▼)</span>
+        <ion-icon class="expandable_icon" name="chevron-back-outline"></ion-icon>
+        </div>
+        <div class="expandable__content-wrapper">
+        <div class="expandable_content">
         <header>
-            Dumziii's World
             <nav>
               
             </nav>
         </header>
+        </div>
         <hr>
     <main>
         <ul>
@@ -57,6 +67,7 @@
     <footer class="index" style="color: lime;">
         <span>Brought to you by <em>Dumziii  Mofolo</em> 2024 </span>
     </footer>
- 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

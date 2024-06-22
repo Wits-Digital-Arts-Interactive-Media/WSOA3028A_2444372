@@ -1,7 +1,7 @@
 .expandable{
-    --xy-padding: 14px; /*re-usable propertoies declarations */
-    --border-radius:10px;
-    --transition-ms: 0.3s;
+    --xy-padding: 14px; /* Re-usable properties declarations */
+    --border-radius: 15px;
+    --transition-ms: 0.4s;
 
     margin: 1em 0;
     font-size: 20px;
@@ -11,26 +11,27 @@
     color: gold;
 }
 .expandable--open .expandable__content-wrapper{
-    grid-template-rows: 1fr; /* when the toggle bar is open*/
-}
-
-.expandable--open.expandable_icon {
-   transform: rotate(0deg); /* the icon will be in its original posotion here*/
+    grid-template-rows: 1fr; /* When the toggle bar is closed */
 }
 
 .expandable.expandable_icon {
-    transform: rotate(-90deg); /* the icon will face downwards bc the toggle bar will be closed*/
+    transform: rotate(-90deg); /* The icon will face downwards because the toggle bar will be closed */
     transition: transform var(--transition-ms); 
 }
+
+.expandable--open.expandable_icon {
+   transform: rotate(0deg); /* The icon will be in its original position here */
+}
+
 .expandable_title_bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--xy-padding); /* this is a css property that allows us to use this padding across other sections in this css file so therefore it is reusable*/
+    padding: var(--xy-padding); /* This is a css property that allows us to use this padding across other sections in this css file so therefore it is reusable */
     user-select: none;
-    background-color: #204E4A;
-    color: limegreen;
-    border-radius: var(--border-radius); /* this is a css property that allows us to use this border radius across other sections in this css file*/
+    background-color: darkgreen;
+    color: lemonchiffon;
+    border-radius: var(--border-radius); /* This is a css property that allows us to use this border radius across other sections in this css file */
     cursor: pointer;
 }
 .expandable_title{
@@ -38,7 +39,7 @@
 }
 
 .expandable_icon{
-    transition: transform var(--border-radius) var(--transition-ms); /* im using the transform property bc thats what ill be using to rortate the icon*/
+    transition: transform var(--transition-ms); /* I'm using the transform property because that's what I'll be using to rotate the icon */
 }
 .expandable_content{
     padding: 0 var(--xy-padding);
@@ -50,6 +51,26 @@
 }
 .expandable__content-wrapper{
    display: grid;
-   grid-template-rows: 0fr;  /*the first way of doing the toggle of the expandable section with css that sets the initial state of the toggle when it is closed */
+   grid-template-rows: 1fr;  /* The first way of doing the toggle of the expandable section with css that sets the initial state of the toggle when it is opened */
    transition: grid-template-rows var(--transition-ms) ease-out;
+}
+
+/* Media query for mobile devices and tablets */
+@media (max-width: 1024px) {
+    .expandable {
+        display: block; /* Show expandable sections on mobile devices and tablets */
+    }
+
+    .expandable--open .expandable__content-wrapper {
+        grid-template-rows: 0fr; /* Set to closed initial on mobile devices */
+    }
+
+    .expandable--open.expandable_icon {
+        transform: rotate(-90deg); /* Rotate the icon to indicate the section is closed */
+    }
+}
+hr {
+    border: 1px solid darkgray; /* Set a visible border color */
+    margin: 20px 0; /* Add some margin to ensure it's not hidden by other elements */
+    width: 100%; /* Make sure it spans the width of its container */
 }

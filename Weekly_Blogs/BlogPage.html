@@ -34,7 +34,9 @@
    <script type="module"> import { initialise } from "../JavaScript_Code/menu.js"
     initialise("Blogs") 
    </script>
-   <script src="../JavaScript_Code/Wavy.js"></script>
+   <script src="../JavaScript_Code/Wavy.js" defer></script>
+   <script src="../JavaScript_Code/Expandable.js" defer></script>
+   <link href="../CSS_Code/Expandable.css" rel="stylesheet">
    <link href="../CSS_Code/Blogspage.css" rel="stylesheet">
    <title>Dumziii's BlogPage section</title>
   
@@ -44,14 +46,22 @@
     <h1 class="BloggyPage">Dumziii's Blogs</h1>
     <h2 id="test"></h2>
     <br>
-<header>
-   Dumziii's World
-   <hr>
+    <span class="subtitle">Dumziii's World</span>
+    <hr>
+    <div class="expandable">
+        <div class="expandable_title_bar">
+        <span class="expandable_title">Expandable Section (Toggle to ▲ & ▼)</span>
+        <ion-icon class="expandable_icon" name="chevron-back-outline"></ion-icon>
+        </div>
+        <div class="expandable__content-wrapper">
+        <div class="expandable_content">
+    <header>
         <nav>
           
         </nav>
-    <hr>
-</header>
+    </header>
+        </div>
+        <hr>
 <main class="Tiles">
     <p1 class="Intro">Here are the links to my weekly blogs:</p1> <!---Navigation links to each blog post-->
     <div class="list-container">
@@ -82,14 +92,22 @@
             <br>This blog post is reflection writing based on insights and understanding gained from the reading  by Laura Robinson at al on Digital Inequalities and why they matter
             <br> by Dumzii Mofolo</a></li><br>
         <li id="testing09"><a href="../Weekly_Blogs/Week 11 Blogpost.html">Week 11 Rants:
-            <br> This blog post is reflection writing based on the incorporation of Javascript and design decisions made as well as the reflection writing on the reading by Birhane at al on Deloconising Computational Sciences
+            <br> This blog post is reflection writing based on the incorporation of Javascript and design decisions made as well as the reflection writing on the reading by Birhane at al 
             <br> by Dumziii Mofolo</a></li><br>
       </ul>
     </div>
 </main>
+
 <footer class="button">
     <span><a href="../Weekly_Blogs/BlogPage.html">Back to Top</a></span>
 </footer>
+<hr>
+
+<footer class="index" style="color: lime;">
+    <span>Brought to you by <em>Dumziii  Mofolo</em> 2024 </span>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>

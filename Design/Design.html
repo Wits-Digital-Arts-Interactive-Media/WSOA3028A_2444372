@@ -34,22 +34,34 @@
      <script type="module"> import { initialise } from "../JavaScript_Code/menu.js"
       initialise("Design") 
      </script>
+     <script src="../JavaScript_Code/Expandable.js" defer></script>
      <link href="../CSS_Code/styles.css" rel="stylesheet">
+     <link href="../CSS_Code/Expandable.css" rel="stylesheet">
      <title>Dumziii's Site Designs</title>
 </head>
 <body>
 <h2 class="heading1">Dumziii's Designs</h2>
+<span class="subtitle">Dumziii's World</span>
+<hr>
+<div class="expandable">
+   <div class="expandable_title_bar">
+   <span class="expandable_title">Expandable Section (Toggle to ▲ & ▼)</span>
+   <ion-icon class="expandable_icon" name="chevron-back-outline"></ion-icon>
+   </div>
+   <div class="expandable__content-wrapper">
+   <div class="expandable_content">
    <header>
-        Dumziii's World
         <hr>
         <nav>
            
         </nav>
    </header>
+   </div>
    <hr>
    <main>
+      <h3 id="Profile"><u>Wireframe Layouts briefly explained</u></h3>
        <picture><!--using this tag to wrap the image attributes because since this is a wireframe  design section, it will need to show  the layout/design visuals-->
-          <p>1. This is the wireframe layout for the <strong style="color: white;">first  webpage</strong> users get directed to:</p>
+          <p id="ref">1. This is the wireframe layout for the <strong><span class="white"> homepage section</span></strong> users get directed to:</p>
           <figure>
           <img src="../Images/Homepage Wireframing.jpg" alt=" A homepage/index page  wireframe Layout showing hyperlinks texts to other sections of the website" width="500px" height="430px"
           title="Homepage wireframe image">
@@ -58,7 +70,7 @@
       </picture>
 
       <picture>
-        <p>2. This is a<strong> profile webpage section</strong> showing what the author's about section will look like:</p>
+        <p id="ref">2. This is a <strong><span class="white">profile webpage section</span></strong> showing what the author's about section will look like:</p>
         <figure>
          <img src = "../Images/Profile Page Wireframing.jpg" alt="A profile wireframe layout showing the author's image and detailing the  funfacts" width="500px" height="430px"
          title="Profile page wireframe"> 
@@ -67,7 +79,7 @@
       </picture>
 
       <picture>
-        <p>3. This is a<strong> blog webpage section</strong> showing what the author's blog post weekly pieces will look like:</p>
+        <p id="ref">3. This is a <strong><span class="white">blog webpage section</span></strong> showing what the author's blog post weekly pieces will look like:</p>
         <figure>
          <img src = "../Images/Blogs Wireframing.jpg" alt="A blog post webpage showing the layout of a weekly post" width="500px" height="430px"
          title="Blogs page wireframe">  
@@ -76,7 +88,7 @@
       </picture>
 
       <picture>
-        <p>4. This is a <strong>design webpage section</strong> showing the various layout that inform the websites visual design:</p>
+        <p id="ref">4. This is a <strong><span class="white">design webpage section</span></strong> showing the various layout that inform the websites visual design:</p>
         <figure>
         <img src="../Images/Design  Wireframing.jpg" alt=" A design webpage  showing the layouts to be found in this section" width="500px" height="430px"
         title="Design page wireframe">
@@ -85,7 +97,7 @@
      </picture>
     
      <picture>
-        <p>5. This is an <strong style="color: white;">essay webpage section</strong> showing the layout structure of the essays:</p>
+        <p id="ref">5. This is a <strong><span class="white">essay webpage section</span></strong> showing the layout structure of the essays:</p>
         <figure>
         <img src="../Images/Essays  Wireframing.jpg" alt="An essay webpage  showing the layout of the essays content." width="500px" height="430px"
         title="Essays page wireframe">
@@ -94,7 +106,7 @@
      </picture>
       
      <picture>
-        <p>6. This is a <strong style="color: white;">portfolio webpage section</strong> showing the layout structure of the authors body of work done:</p>
+        <p id="ref">6. This is a <strong><span class="white"> portfolio webpage section</span></strong> showing the layout structure of the authors body of work:</p>
         <figure>
         <img src="../Images/Portfolio Wireframing.jpg" alt="A portfolio webpage showing the layout of the author's completed work to show evidence of skillset" width="500px" height="430px"
         title="Portfolio page wireframe">
@@ -103,7 +115,7 @@
      </picture>
         
      <picture>
-        <p>7. This a <strong style="color: white;">socio-cultural and political webpage</strong> showing the layout that informs the commentary visual design:</p>
+        <p id="ref">7. This is a <strong><span class="white"> commentary webpage section</span></strong> showing the layout that informs the  socio-cultural section:</p>
         <figure>
         <img src="../Images/Commentary  Wireframing.jpg" alt="A commentary webpage showing the layout of the author's unsolicited thoughts and commentary" width="500px" height="430px"
         title="Commentary page wireframe">
@@ -112,7 +124,7 @@
      </picture>
 
      <picture>
-        <p>8. This is a <strong style="color: white;">software projects webpage </strong> showing the layout that informs the structure of the projects:</p>
+        <p id="ref">8. This is a <strong><span class="white"> projects webpage section</span></strong> showing the layout that informs the structure of the projects:</p>
         <figure>
         <img src="../Images/Software Projects Wireframing.jpg" alt="A software projects webpage showing the layout of the projects done on Adobe , Behance etc." width="500px" height="400px"
         title="Software page wireframe">
@@ -123,9 +135,9 @@
 
      <!--another section of the heading showing different content to the above content-->
    <main>
-     <h2 id="Profile">Information Structure and User Flow chart:</h2>
+     <h4 id="Profile"><u>Information Structure and User Flow chart:</u></h4>
      <picture>
-        <p>9. This is an <strong>information structure mindmap</strong> showing how users would traverse this website:</p>
+        <p id="ref">9. This is an <strong><span class="white"> structure mindmap</span></strong> showing how users would traverse this website:</p>
         <figure>
         <img src="../Images/Mind map.png" alt="A mindmap showing ideas that entail how users would go through this website"width="500px" height="430px"
         title="Information structure mindmap/flow diagram">
@@ -136,7 +148,7 @@
      </picture>
 
      <picture>
-        <p>10. This is a <strong>user flow chart</strong> showing a step-by-step process of how users need  to go through this website:</p>
+        <p id="ref">10. This is a <strong><span class="white">flow chart</span></strong> showing a step-by-step process of how users need  to go through this website:</p>
         <figure>
         <img src="../Images/User Flow chart.png" alt="A flowchart guiding users on how to go through this website" width="500px" height="430px"
         title="User flow diagram">
@@ -154,5 +166,7 @@
       <span>Brought to you by <em>Dumziii Mofolo</em> 2024</span>
     </footer>
    </main>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

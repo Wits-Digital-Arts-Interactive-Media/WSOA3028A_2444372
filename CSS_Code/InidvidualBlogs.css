@@ -3,16 +3,29 @@
     background-color: #033825;
     font-style: italic;
 }
+.subtitle{
+  color: gold;
+}
 h1{
   color: lemonchiffon;
 }
+figcaption{
+  color: darkorange;
+}
+
 .Essays{
   color: darkorange;
   font-style: italic;
   font-size: 20px;
 }
+.grey{
+  color: grey;
+}
+.white{
+  color: white;
+}
 #Changes{
-  color: forestgreen;
+  color: grey;
 }
 
 #caption{
@@ -33,7 +46,7 @@ h1{
     color: lemonchiffon;
     font-size:20px;
   }
-  .heading1{
+  .heading1{ 
     color: lemonchiffon;
     font-size: 2rem;
     font-style: italic;
@@ -44,15 +57,23 @@ color: lemonchiffon;
 a[href]:hover{
 color: gold;
 }
-a{
-color: darkorange;
+li.a[href]{
+  color: darkorange;
+}
+li.a[href]:hover{
+  color:gold;
 }
 p{
     color: limegreen;
     font-size: medium;
 }
-#ref{
+a{
+  color: darkorange;
+  }
+#ref{ /* the paragraphs section*/
+text-align: center;
 color: forestgreen;
+font-size: 23px;
 }
 #Part{
   color: forestgreen;
@@ -60,16 +81,18 @@ color: forestgreen;
 .title{
   color: lemonchiffon;
 }
-#Main{
-  color: gold;
-}
 .index span{ 
   color: lime;
   height: 10px; 
   }
 li{
-  color: white;
-  font-size: medium;
+  color: forestgreen;
+  font-size: 22px;
+}
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .Nav span a{
     justify-content: left;
@@ -84,6 +107,10 @@ li{
     background-color: darkgreen;
     color: gold;
     };
+.position {
+      margin-left: auto; /* Push this item to the far right */
+  }
+
 /* Media queries for responsiveness */
 @media only screen and (max-width: 479px) {
   header {

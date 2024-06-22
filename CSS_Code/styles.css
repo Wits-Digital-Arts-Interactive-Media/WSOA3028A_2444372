@@ -15,12 +15,21 @@ h1 {
     overflow: hidden;
     font-style: italic;
   } 
+  
   .subtitle{
     color: gold;
+  }
+  #Title{
+    text-align: left;
+    font-size: 20px;
+    color: lemonchiffon;
   }
   #Titlesss{
     text-align: left;
     color: lemonchiffon;
+  }
+  .white{
+    color: grey;
   }
 h1 span { /* increasing the order of specificity by targeting the span element */
     display: block;
@@ -67,7 +76,7 @@ header, nav { /* using multiple selectors to avoid repetitive code */
     color: gold;
   }
   figcaption{
-    color: darkorange;
+    color: grey;
   }
   @keyframes party {
     0% {
@@ -87,7 +96,16 @@ header, nav { /* using multiple selectors to avoid repetitive code */
   .image-transition {
     animation: party 1s ease-in;
   }
-  .u-email.address:hover {
+  a.u-email.address[href]{
+      color: darkorange;
+  }
+  a.LinkedInhandle[href]{
+    color: darkorange;
+  }
+  a.LinkedInhandle:hover{
+    color: gold;
+  }
+  a.u-email.address:hover {
     color: gold;
 }
   p{
@@ -115,7 +133,7 @@ color: darkorange;
 color: lemonchiffon;
 }
 li{
-  color: gold;
+  color: darkorange;
   font-size: medium;
 }
 .Nav span a{
@@ -135,11 +153,10 @@ color: gold;
 color: lime;
 height: 10px; 
 }
-#Title{
-  color: lemonchiffon;
-}
+
 #ref{
   color: forestgreen;
+  font-size: 23px;
   }
 
 /* Media queries for responsiveness */
