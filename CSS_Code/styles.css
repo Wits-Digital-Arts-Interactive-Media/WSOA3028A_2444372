@@ -138,8 +138,12 @@ li{
   color: darkorange;
   font-size: medium;
 }
+.Nav .nav-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space between the items */
+  align-items: center; /* Center items vertically */
+}
 .Nav span a{
-  justify-content: left;
   background-color: green;
   display: inline-block;
   border-radius: 10px;
@@ -151,8 +155,8 @@ li{
   background-color: darkgreen;
   color: gold;
 }
-.position {
-  float: right; /* Pushingggg this item to the far right */
+.next-commentary {
+  margin-left: auto; /* Push this item to the far right */
 }
 .index span{ 
 color: grey;
@@ -171,8 +175,8 @@ height: 10px;
 }
 @media (max-width: 768px) { 
   .centered-paragraph {
-      max-width: 90%; /* Use a percentage for smaller screens to be more flexible */
-      padding: 0 15px; /* Reduce padding on smaller screens */
+      max-width: 90%; /* Usinggg a percentage for smaller screens to be more flexible */
+      padding: 0 15px; /* Reducing the  padding on smaller screens */
   }
 }
 /* Media queries for responsiveness */
