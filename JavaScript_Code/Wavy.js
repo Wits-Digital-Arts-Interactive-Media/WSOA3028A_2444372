@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {//callback initiation to  l
     }
 
     // Call the function to gradually reveal the text
-    showWavyText(weekTxt, "All about Dumziii's Rants");
+    showWavyText(weekTxt, "All about Dumziii's Rants...");
 
     console.log("You're definitely workingggg , brooo!");
 });

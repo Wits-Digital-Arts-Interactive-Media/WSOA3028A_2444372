@@ -29,7 +29,7 @@
     justify-content: space-between;
     padding: var(--xy-padding); /* This is a css property that allows us to use this padding across other sections in this css file so therefore it is reusable */
     user-select: none;
-    background-color: darkgreen;
+    background-color: #084202;
     color: lemonchiffon;
     border-radius: var(--border-radius); /* This is a css property that allows us to use this border radius across other sections in this css file */
     cursor: pointer;

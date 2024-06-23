@@ -15,6 +15,10 @@ h1 {
     overflow: hidden;
     font-style: italic;
   } 
+  #Changes{
+    color: grey;
+    font-size: 20px;
+  }
   
   .subtitle{
     color: gold;
@@ -46,18 +50,18 @@ h1 span { /* increasing the order of specificity by targeting the span element *
 }
   .description{
     text-align: left;
-    color: gold 
+    color: lemonchiffon;
   }
   .Description-text{
-    color: lemonchiffon;
-    font-size: medium;
+    color: forestgreen;
+    font-size: 20px;
    }
 header, nav { /* using multiple selectors to avoid repetitive code */
   color: lemonchiffon;
   text-align: left;
   }
 .index span{ 
-    color: lime;
+    color: grey;
     height: 10px; 
 }
 
@@ -118,10 +122,11 @@ header, nav { /* using multiple selectors to avoid repetitive code */
   }
    /* Inside the Critical Reflection Page*/
   .p-name{
-    color: forestgreen;
+    color: lemonchiffon;
   }
 .p-summary{
-color: lemonchiffon;
+color: forestgreen;
+font-size: 20px;;
 }
 a[href]:hover{
 color: gold;
@@ -129,36 +134,47 @@ color: gold;
 a, p{
 color: darkorange;
 }
-#ref{
-color: lemonchiffon;
-}
 li{
   color: darkorange;
   font-size: medium;
 }
 .Nav span a{
-justify-content: left;
-background-color:  darkgreen;
-display: inline-block;
-border-radius: 10px;
-padding: 20px;
-text-decoration: none;
-color: darkorange;
+  justify-content: left;
+  background-color: green;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: orange;
 }
 .Nav span a:hover{
-background-color: darkgreen;
-color: gold;
+  background-color: darkgreen;
+  color: gold;
+}
+.position {
+  float: right; /* Pushingggg this item to the far right */
 }
 .index span{ 
-color: lime;
+color: grey;
 height: 10px; 
 }
+.centered-paragraph {
+  max-width: 1100px; /* what causes the text top be centered*/
+  margin: 0 auto; /* Center the text container within its parent */
+  padding: 0 10px; /* what causes the extra negative space */
+}
 
-#ref{
+#ref{ /* the paragraphs section*/
   color: forestgreen;
-  font-size: 23px;
+  font-size: 20px;
+  word-wrap: break-word; /* causes the text to be wrapped and break when it overflows*/
+}
+@media (max-width: 768px) { 
+  .centered-paragraph {
+      max-width: 90%; /* Use a percentage for smaller screens to be more flexible */
+      padding: 0 15px; /* Reduce padding on smaller screens */
   }
-
+}
 /* Media queries for responsiveness */
 @media only screen and (max-width: 479px) {
     header {

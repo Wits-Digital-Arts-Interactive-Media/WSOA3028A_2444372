@@ -11,10 +11,13 @@ h1{
 }
 figcaption{
   color: darkorange;
+  font-size: 20px;
 }
-
+.expandable_title_bar{
+  background-color: #084202;
+}
 .Essays{
-  color: darkorange;
+  color: gold;
   font-style: italic;
   font-size: 20px;
 }
@@ -26,8 +29,8 @@ figcaption{
 }
 #Changes{
   color: grey;
+  font-size: 20px;
 }
-
 #caption{
   color: forestgreen;
 }
@@ -35,11 +38,11 @@ figcaption{
   color: lemonchiffon;
 }
 .p-name{
-    color: limegreen;
+    color: forestgreen;
   }
   .Blog{
     text-align: left;
-    color: lemonchiffon;
+    color: gold;
   }
   .heading{
     justify-content:left;
@@ -48,11 +51,12 @@ figcaption{
   }
   .heading1{ 
     color: lemonchiffon;
-    font-size: 2rem;
+    font-size: 22px;
     font-style: italic;
   }
 .p-summary{
-color: lemonchiffon;
+color: forestgreen;
+font-size: 20px;
 }
 a[href]:hover{
 color: gold;
@@ -63,17 +67,35 @@ li.a[href]{
 li.a[href]:hover{
   color:gold;
 }
+ ul li  {
+  color: forestgreen;
+  font-size: 22px;
+  justify-content: left;
+}
 p{
-    color: limegreen;
-    font-size: medium;
+    color: forestgreen;
+    font-size: 20px;
 }
 a{
   color: darkorange;
   }
+.centered-paragraph {
+    max-width: 1100px; /* what causes the text top be centered*/
+    margin: 0 auto; /* Center the text container within its parent */
+    padding: 0 10px; /* what causes the extra negative space */
+}
+
 #ref{ /* the paragraphs section*/
 text-align: center;
 color: forestgreen;
 font-size: 23px;
+word-wrap: break-word; /* causes the text to be wrapped and break when it overflows*/
+}
+@media (max-width: 768px) { 
+  .centered-paragraph {
+      max-width: 90%; /* Use a percentage for smaller screens to be more flexible */
+      padding: 0 15px; /* Reduce padding on smaller screens */
+  }
 }
 #Part{
   color: forestgreen;
@@ -82,13 +104,10 @@ font-size: 23px;
   color: lemonchiffon;
 }
 .index span{ 
-  color: lime;
+  color: grey;
   height: 10px; 
   }
-li{
-  color: forestgreen;
-  font-size: 22px;
-}
+
 .Nav {
   display: flex;
   justify-content: space-between;

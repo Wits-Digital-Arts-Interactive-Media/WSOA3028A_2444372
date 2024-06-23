@@ -10,8 +10,11 @@
     }
     .subtitle{
         color: gold;
+        font-style: italic;
       }
-    
+    .expandable_title_bar{
+        background-color: #084202;
+      }
     #test {
         font-size: 25px;
         color: lemonchiffon;
@@ -24,25 +27,36 @@
     }
     .Intro {
         color: lemonchiffon;
-        font-size: medium;
+        font-size: 20px;
     }
-    
+    .index span{ 
+        color: grey;
+        height: 10px; 
+    }
     #test span {
         position: relative;
         display: inline-flex;
     }
+    .centered-paragraph {
+        max-width: 1100px; /* what causes the text top be centered*/
+        margin: 0 auto; /* Center the text container within its parent */
+        padding: 0 10px; /* what causes the extra negative space */
+    }
     
     .button span a {
-        background-color: darkgreen;
-        display: inline-block;
-        border-radius: 40px;
-        padding: 20px;
-        text-decoration: none;
-        color: gold;
+    justify-content: left;
+    background-color: green;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: orange;
+    font-style: italic;
     }
     
     .button span a:hover {
-        background-color: darkorange;
+    background-color: darkgreen;
+    color: gold;
     }
     
     .list-container {

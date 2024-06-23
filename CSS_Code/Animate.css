@@ -29,7 +29,7 @@
     
     @media (max-width: 768px) {
         .Animate {
-            font-size: 25px; /* Adjust font size for medium screens */
+            font-size: 22px; /* Adjust font size for medium screens */
             padding-top: 08vh;
         }
         .pointer {
