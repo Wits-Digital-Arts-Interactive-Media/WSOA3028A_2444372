@@ -2,19 +2,19 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM has  fully loaded and parsed");//loading the dom content first so that the html content is already loaded  before this runnss
     // Toggle expandable section, same as the navigation menu functionality her
     document.body.addEventListener("click", (ev) => {
-        const isCommentsClicked = ev.target.closest(".expandable_title_bar");
+        const isCommentsClicked = ev.target.closest(".expand_title_bar");
         if (!isCommentsClicked) {
             console.log("Not a comments section click, click again buddyy");
             return;
         }
 
-        const commentsSection = isCommentsClicked.closest(".expandable");
+        const commentsSection = isCommentsClicked.closest(".expand");
         if (!commentsSection) {
             console.log("Comments section not found, click again buddy");
             return;
         }
 
-        commentsSection.classList.toggle("expandable--open");// this will when it would work because the expanded section even target would be true
+        commentsSection.classList.toggle("expand--open");// this will when it would work because the expanded section even target would be true
         console.log("The comments section is opening and closing, dankooooooo");
 
          //here im adding fucntionality for the comments submit button and being able to delete it

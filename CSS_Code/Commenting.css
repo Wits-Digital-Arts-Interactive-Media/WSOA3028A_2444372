@@ -1,4 +1,4 @@
-.expandable{
+.expand{
     --xy-padding: 14px; /* Re-usable properties declarations */
     --border-radius: 15px;
     --transition-ms: 0.4s;
@@ -7,14 +7,14 @@
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
-.expandable:hover{
+.expand:hover{
     color: gold;
 }
-.expandable--open .expandable__content-wrapper{
+.expandable--open .expand_content-wrapper{
     grid-template-rows: 0fr; /* When the toggle bar is closed */
 }
 
-.expandable_title_bar{
+.expand_title_bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +25,7 @@
     border-radius: var(--border-radius); /* This is a css property that allows us to use this border radius across other sections in this css file */
     cursor: pointer;
 }
-.expandable_title{
+.expand_title{
     font-weight: bold;
 }
 
@@ -77,7 +77,7 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.expandable__content-wrapper{
+.expand_content-wrapper{
    display: grid;
    grid-template-rows: 1fr;  /* The first way of doing the toggle of the expandable section with css that sets the initial state of the toggle when it is opened */
    transition: grid-template-rows var(--transition-ms) ease-out;
@@ -85,16 +85,12 @@
 
 /* Media query for mobile devices and tablets */
 @media (max-width: 768px) {
-    .expandable {
+    .expand {
         display: block; /* Show expandable sections on mobile devices and tablets */
     }
 
-    .expandable--open .expandable__content-wrapper {
+    .expand--open .expand_content-wrapper {
         grid-template-rows: 0fr; /* Set to closed initial on mobile devices */
-    }
-
-    .expandable--open.expandable_icon {
-        transform: rotate(-90deg); /* Rotate the icon to indicate the section is closed */
     }
 }
 hr {
