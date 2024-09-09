@@ -30,7 +30,11 @@
         }
        </script>
     <script src="../JavaScript_Code/Reaction.js"></script>
+    <script src="../JavaScript_Code/Expandable.js" defer></script>
+    <script src="../JavaScript_Code/CommentSection.js" defer></script>
     <link href="../CSS_Code/InidvidualBlogs.css" rel="stylesheet">
+    <link href="../CSS_Code/Expandable.css" rel="stylesheet">
+    <link href="../CSS_Code/Commenting.css" rel="stylesheet">
     <title>Dumziii's Blog Post 12</title>
 </head>
 <body>
@@ -119,6 +123,21 @@
         </form>
     </footer>
     <br>
+    <section></section>
+        <div class="expand">
+            <div class="expand_title_bar">
+                <span class="expand_title">Comment down below (Click here to see if your comment was saved after posting it)</span>
+            </div>
+            <div class="expand_content-wrapper">
+                <div class="comments_content">
+                    <input type="text" id="commentsInput" placeholder="Write your thoughts or opinions here">
+                    <button class="submitComment" type="button">Post</button>
+                    <div id="commentsList"></div>
+                    <button class="replyComment" type="button">Reply</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <nav class="Nav">
         <span><a href="../Weekly_Blogs/BlogPage.html">Back to BlogPage</a></span>
         <br>

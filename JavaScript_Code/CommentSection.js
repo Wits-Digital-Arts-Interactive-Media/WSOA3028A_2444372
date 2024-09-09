@@ -178,5 +178,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             });
         }
+        function notificationAlert(){
+            const alertSound =  alert("A user has commented on your site")
+            console.log(alertSound);
+        }
+        notificationAlert();
     });
 });
